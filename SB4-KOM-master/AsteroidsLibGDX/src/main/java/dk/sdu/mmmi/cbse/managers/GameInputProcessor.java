@@ -4,18 +4,18 @@ import com.badlogic.gdx.InputAdapter;
 import com.badlogic.gdx.Input.Keys;
 
 public class GameInputProcessor extends InputAdapter {
-
+	
 	public boolean keyDown(int k) {
-		if(k == Keys.UP || k == Keys.W) {
+		if(k == Keys.UP) {
 			GameKeys.setKey(GameKeys.UP, true);
 		}
-		if(k == Keys.LEFT || k == Keys.A) {
+		if(k == Keys.LEFT) {
 			GameKeys.setKey(GameKeys.LEFT, true);
 		}
-		if(k == Keys.DOWN || k == Keys.S) {
+		if(k == Keys.DOWN) {
 			GameKeys.setKey(GameKeys.DOWN, true);
 		}
-		if(k == Keys.RIGHT || k == Keys.D) {
+		if(k == Keys.RIGHT) {
 			GameKeys.setKey(GameKeys.RIGHT, true);
 		}
 		if(k == Keys.ENTER) {
@@ -32,18 +32,18 @@ public class GameInputProcessor extends InputAdapter {
 		}
 		return true;
 	}
-
+	
 	public boolean keyUp(int k) {
-		if(k == Keys.UP|| k == Keys.W) {
+		if(k == Keys.UP) {
 			GameKeys.setKey(GameKeys.UP, false);
 		}
-		if(k == Keys.LEFT || k == Keys.A) {
+		if(k == Keys.LEFT) {
 			GameKeys.setKey(GameKeys.LEFT, false);
 		}
-		if(k == Keys.DOWN || k == Keys.S) {
+		if(k == Keys.DOWN) {
 			GameKeys.setKey(GameKeys.DOWN, false);
 		}
-		if(k == Keys.RIGHT || k == Keys.D) {
+		if(k == Keys.RIGHT) {
 			GameKeys.setKey(GameKeys.RIGHT, false);
 		}
 		if(k == Keys.ENTER) {
@@ -60,10 +60,8 @@ public class GameInputProcessor extends InputAdapter {
 		}
 		return true;
 	}
-
+	
 }
-
-
 
 
 
